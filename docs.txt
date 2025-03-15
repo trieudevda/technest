@@ -1,0 +1,24 @@
+/my-next-app
+│── public/                # Ảnh, favicon, file tĩnh
+│── src/                   # Source code chính (nếu muốn tách)
+│   │── app/               # App Router (Next.js 13+)
+│   │   │── layout.tsx     # Layout gốc (Header, Footer)
+│   │   │── page.tsx       # Trang chính (Home page)
+│   │   │── about/         # Trang About
+│   │   │   │── page.tsx   # Trang about
+│   │   │── products/      # Nhóm sản phẩm
+│   │   │   │── page.tsx   # Trang danh sách sản phẩm
+│   │   │   │── [id]/      # Dynamic route
+│   │   │   │   │── page.tsx # Trang chi tiết sản phẩm
+│   │   │── api/           # API Routes trong `app/`
+│   │── components/        # Component dùng chung
+│   │── layouts/           # Layouts con (AuthLayout, DashboardLayout)
+│   │── hooks/             # Custom hooks
+│   │── lib/               # Function fetch data, API client
+│   │── styles/            # File CSS, Tailwind config
+│   │── utils/             # Helper functions
+│── middleware.ts          # Middleware Next.js
+│── next.config.js         # Cấu hình Next.js
+│── package.json           # Dependencies
+│── tsconfig.json          # Nếu dùng TypeScript
+│── .env.local             # Biến môi trường

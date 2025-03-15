@@ -1,0 +1,8 @@
+@use 'cart' as *;
+@use 'notification' as *;
+.top-bar {
+    height: var(--margin1);
+    max-height: var(--margin1);
+    background-color: var(--bodybg-color);
+    z-index:1;
+}

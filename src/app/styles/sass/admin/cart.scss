@@ -1,0 +1,25 @@
+.drawer-cart {
+    >.MuiDrawer-paper {
+        max-height: 450px;
+        border-radius: 1rem;
+        margin-top: var(--margin1);
+
+        .cart-item {
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            &:hover {
+                background-color: var(--color1);
+            }
+
+            .icon-delete-cart {
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    * {
+                        color: var(--color-main);
+                    }
+                }
+            }
+        }
+    }
+}

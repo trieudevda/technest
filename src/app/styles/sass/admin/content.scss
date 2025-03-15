@@ -1,0 +1,37 @@
+.content-all{
+    min-width: calc(100vw - var(--w-navbar));
+    max-width: calc(100vw - var(--w-navbar));
+    max-height: calc( 100vh - var(--margin1));
+    .pagination-custom{
+        margin-right: 8px;
+        button{
+            padding:0;
+            // margin:0;
+            min-width: 25px;
+            max-height: 25px;
+        }
+    }
+    form{
+        &.form-edit{
+            .stack-bottom{
+                span{
+                    &:last-child{
+                        padding:1rem;
+                        aspect-ratio: 1/1;
+                        border:1px solid #000;
+                        border-radius: 50%;
+                        border-color: var(--color3);
+                        background-color: var(--color2);
+                        &:hover{
+                            cursor: pointer;
+                        }
+                        svg{
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

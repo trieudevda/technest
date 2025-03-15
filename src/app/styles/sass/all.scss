@@ -1,0 +1,11 @@
+@use 'admin/global.scss' as *;
+@use 'admin/navbar.scss' as *;
+@use 'admin/topbar.scss' as *; 
+@use 'admin/content.scss' as *; 
+@use 'admin/tiptap.scss' as *;
+
+main{ 
+    // max-height: 100vh;
+    padding-top: var(--margin1);
+    overflow-y: auto;
+}

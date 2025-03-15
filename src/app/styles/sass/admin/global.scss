@@ -1,0 +1,119 @@
+*:not(svg, path) {
+    font-size: 16px;
+    scrollbar-width: thin;
+    font-family: 'Roboto', sans-serif !important;
+    color: var(--foreground);
+}
+
+*:not(h1, h2, h3, h4, h5, h6, svg, path) {
+    color: #171717;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 22px;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+    margin: 0;
+    background-color: var(--bodybg-color) !important;
+    overflow: hidden;
+}
+.editor-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    min-height: 200px; /* Đặt chiều cao tối thiểu */
+    max-height: 500px; /* Đặt chiều cao tối đa */
+    overflow-y: auto; /* Cuộn khi nội dung quá dài */
+  }
+  
+  .editor-textarea,.tiptap {
+    outline: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 16px;
+    min-height: 200px; /* Đặt chiều cao tối thiểu */
+    height: auto; /* Mở rộng theo nội dung */
+    width: 100%;
+  }
+  
+  
+.text-tree-line {
+    display: block;
+    /* Fallback trong trường hợp trình duyệt không hỗ trợ display dạng box */
+    display: -webkit-box;
+    line-height: 1 !important;
+    /* Fallback  */
+    // max-height: 74px; /* Fallback số dòng bạn muốn giới hạn */
+    -webkit-line-clamp: 3;
+    /* Số dòng bạn muốn giới hạn */
+    -webkit-box-orient: vertical;
+    visibility: visible;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.text-tree-line {
+    display: block;
+    /* Fallback trong trường hợp trình duyệt không hỗ trợ display dạng box */
+    display: -webkit-box;
+    line-height: 1 !important;
+    /* Fallback  */
+    // max-height: 74px; /* Fallback số dòng bạn muốn giới hạn */
+    -webkit-line-clamp: 1;
+    /* Số dòng bạn muốn giới hạn */
+    -webkit-box-orient: vertical;
+    visibility: visible;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.btn-grid-data {
+    display: inline-flex;
+    -webkit-box-align: center;
+    justify-content: center;
+    position: relative;
+    user-select: none;
+    vertical-align: middle;
+    font-weight: 500;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    min-width: 64px;
+    border: 0;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: var(--variant-textColor);
+    background-color: var(--variant-textBg);
+    --variant-textColor: #1976d2;
+    --variant-outlinedColor: #1976d2;
+    --variant-outlinedBorder: rgba(25, 118, 210, 0.5);
+    --variant-containedColor: #fff;
+    --variant-containedBg: #1976d2;
+    padding: 4px 5px;
+    font-size: 0.8125rem;
+}
